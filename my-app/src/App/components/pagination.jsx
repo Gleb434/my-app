@@ -12,8 +12,8 @@ const Pagination = ({ itemsCount, pageSize, onPageChange, currentPage }) => {
                 {pages.map((page) => (
                     <li
                         className={
-                            "page-item " +
-                            (page === currentPage ? "active" : "")
+                            "page-item" +
+                            (page === currentPage ? " active" : "")
                         }
                         key={"page_" + page}
                     >
@@ -29,7 +29,6 @@ const Pagination = ({ itemsCount, pageSize, onPageChange, currentPage }) => {
         </nav>
     );
 };
-
 Pagination.propTypes = {
     itemsCount: PropTypes.number.isRequired,
     pageSize: PropTypes.number.isRequired,
