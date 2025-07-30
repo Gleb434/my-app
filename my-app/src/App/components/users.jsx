@@ -48,6 +48,8 @@ const Users = ({ users: allUsers, ...rest }) => {
                         selectedItem={selectedProf}
                         items={professions}
                         onItemSelect={handleProfessionSelect}
+                        valueProperty="_id"
+                        contentProperty="name"
                     />
                     <button
                         className="btn btn-secondary mt-2"

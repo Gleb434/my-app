@@ -1,6 +1,3 @@
-const plugin = require("eslint-plugin-react");
-const { browser } = require("globals");
-
 module.exports = {
     env: {
         browser: true,
@@ -17,14 +14,17 @@ module.exports = {
     plugins: ["react"],
     rules: {
         semi: [2, "always"],
-        indent: ["error", 4],
+        indent: [0, 4],
         "space-before-function-paren": [
             "error",
-            {
-                anonymous: "always",
-                named: "never"
-            }
+            { anonymous: "always", named: "never" }
         ],
-        quotes: ["error", "double", { allowTemplateLiterals: true }]
+        quotes: [
+            "error",
+            "double",
+            {
+                allowTemplateLiterals: true
+            }
+        ]
     }
 };
