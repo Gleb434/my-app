@@ -21,7 +21,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "format": "npx prettier --write ."
+        "format": "npx prettier --write .",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -50,6 +52,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^6.6.0",
         "eslint-plugin-react": "^7.37.5",
+        "gh-pages": "^6.3.0",
         "globals": "^16.3.0"
     }
 }
